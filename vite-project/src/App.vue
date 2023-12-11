@@ -1,30 +1,52 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+<script>
+import AppMain from "./components/AppMain.vue"
+
+import axios from 'axios'; //importo Axios
+import { store } from "./store.js" //state management
+
+export default {
+	components: {
+		AppComponent
+	},
+	data() {
+		return {
+			store
+		}
+	},
+	mounted() {
+		this.doThings();
+
+		// axios.get("indirizzo").then(risultato => {
+		// 	console.log(risultato);
+		// }).catch(errore => {
+		// 	console.error(errore);
+		// });
+	},
+	methods: {
+		doThings() {
+			console.log("App.vue does things");
+		}
+	}
+}
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+	<main>
+		<AppComponent />
+	</main>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+<style lang="scss">
+// importo il foglio di stile generale dell'applicazione, non-scoped
+@use './styles/general.scss';
+</style>
+
+<style scoped lang="scss">
+// importo variabili
+// @use './styles/partials/variables' as *;
+
+// ...qui eventuale SCSS di App.vue
+main {
+	padding: 1rem;
 }
 </style>
