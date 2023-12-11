@@ -14,15 +14,14 @@ export default {
         }
     },
     mounted() {
-        register(this); //per debuggare il componente da console
-        this.doThings();
+
     }
 }
 </script>
 
 <template>
     <div>
-        <h1>Sono un componente!</h1>
+        <h1>footer</h1>
     </div>
 </template>
 

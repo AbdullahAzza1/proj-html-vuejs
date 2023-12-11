@@ -14,21 +14,26 @@ export default {
         }
     },
     mounted() {
-        register(this); //per debuggare il componente da console
-        this.doThings();
+
     }
 }
 </script>
 
 <template>
-    <div>
-        <h1>Sono un componente!</h1>
-    </div>
+    <header>
+        <div>
+            <h1>footer</h1>
+        </div>
+    </header>
 </template>
 
 <style scoped lang="scss">
 // importo variabili
 // @use './styles/partials/variables' as *;
+header {
+    height: 4rem;
+    background-color: black;
+}
 
 // ...qui eventuale SCSS di AppComponent
 </style>
