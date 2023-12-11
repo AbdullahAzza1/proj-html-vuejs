@@ -1,6 +1,5 @@
 <script>
 import { store } from "../store.js" //state management
-import register from "../debug" //per debuggare il componente da console
 
 export default {
 	name: "AppMain",

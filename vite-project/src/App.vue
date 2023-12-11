@@ -1,12 +1,17 @@
 <script>
-import AppMain from "./components/AppMain.vue"
+import AppHeader from "./components/AppHeader.vue";
+import AppMain from "./components/AppMain.vue";
+import AppFooter from "./components/AppFooter.vue";
 
 import axios from 'axios'; //importo Axios
 import { store } from "./store.js" //state management
 
+
 export default {
 	components: {
-		AppComponent
+		AppHeader,
+		AppMain,
+		AppFooter
 	},
 	data() {
 		return {
@@ -31,14 +36,22 @@ export default {
 </script>
 
 <template>
+	<header>
+		<AppHeader />
+	</header>
 	<main>
-		<AppComponent />
+		<AppMain />
 	</main>
+	<footer>
+		<AppFooter />
+	</footer>
 </template>
 
 <style lang="scss">
 // importo il foglio di stile generale dell'applicazione, non-scoped
-@use './styles/general.scss';
+
+
+//@use './styles/general.scss';
 </style>
 
 <style scoped lang="scss">
