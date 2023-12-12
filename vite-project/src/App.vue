@@ -52,7 +52,13 @@ export default {
 					label: 'shop',
 					link: '#'
 				},
-
+			],
+			card: [
+				{
+					id: 1,
+					image: '../',
+					text: '',
+				}
 			]
 		}
 	},

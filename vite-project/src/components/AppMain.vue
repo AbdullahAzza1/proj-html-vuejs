@@ -45,6 +45,7 @@ export default {
 		</div>
 		<div class="soundCategory">
 			<p>WHO WE ARE</p>
+			<h2>SENSE THE JAZZ</h2>
 		</div>
 	</main>
 </template>
@@ -82,9 +83,7 @@ img {
 .soundCategory {
 	height: 50rem;
 	background-color: black;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+
 }
 
 // ...qui eventuale SCSS di AppComponent
