@@ -56,7 +56,7 @@ export default {
 			card: [
 				{
 					id: 1,
-					image: '../',
+					image: "../assets/img/assets/",
 					text: '',
 				}
 			]

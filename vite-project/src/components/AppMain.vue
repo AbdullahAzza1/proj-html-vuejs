@@ -47,6 +47,19 @@ export default {
 			<p>WHO WE ARE</p>
 			<h2>SENSE THE JAZZ</h2>
 		</div>
+		<div class="rock">
+			<img src="../assets/img/assets/cms_parallax.jpg" alt="">
+			<div id="center">INSTRUMENTAL ROCK
+				<h2>ALBUM OUT NOW</h2>
+				<button>read more</button>
+			</div>
+		</div>
+		<div class="awards">
+			<img src="../assets/img/assets/counter_parallax.jpg" alt="">
+			<div>
+
+			</div>
+		</div>
 	</main>
 </template>
 
@@ -84,6 +97,17 @@ img {
 	height: 50rem;
 	background-color: black;
 
+}
+
+.rock {
+	height: 35rem;
+	width: 0 auto;
+	position: relative;
+}
+
+.awards {
+	height: 27rem;
+	width: 0 auto;
 }
 
 // ...qui eventuale SCSS di AppComponent
