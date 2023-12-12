@@ -21,9 +21,7 @@ export default {
 
 <template>
     <header>
-        <div>
-            <h1>footer</h1>
-        </div>
+        <img src="../" alt="">
     </header>
 </template>
 
@@ -31,7 +29,7 @@ export default {
 // importo variabili
 // @use './styles/partials/variables' as *;
 header {
-    height: 4rem;
+    height: 6rem;
     background-color: black;
 }
 
