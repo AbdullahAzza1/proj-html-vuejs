@@ -15,7 +15,45 @@ export default {
 	},
 	data() {
 		return {
-			store
+			store,
+			menuLinks: [
+				{
+					id: 1,
+					label: 'Home',
+					link: '#'
+				},
+				{
+					id: 2,
+					label: 'blog',
+					link: '#'
+				},
+				{
+					id: 3,
+					label: 'events',
+					link: '#'
+				},
+				{
+					id: 4,
+					label: 'gallery',
+					link: '#'
+				},
+				{
+					id: 5,
+					label: 'about us',
+					link: '#'
+				},
+				{
+					id: 6,
+					label: 'contacts',
+					link: '#'
+				},
+				{
+					id: 7,
+					label: 'shop',
+					link: '#'
+				},
+
+			]
 		}
 	},
 	mounted() {
@@ -37,7 +75,7 @@ export default {
 
 <template>
 	<header>
-		<AppHeader />
+		<AppHeader :links="menuLinks" />
 	</header>
 	<main>
 		<AppMain />
