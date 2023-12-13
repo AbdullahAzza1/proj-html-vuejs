@@ -158,7 +158,7 @@ img {
 }
 
 .counter1 {
-	animation: counter 5s infinite alternate ease-in-out;
+	animation: counter1 5s infinite alternate ease-in-out;
 	counter-reset: num var(--num);
 	font: 800 40px system-ui;
 	padding: 2rem;
@@ -179,7 +179,7 @@ img {
 }
 
 .counter2 {
-	animation: counter 5s infinite alternate ease-in-out;
+	animation: counter2 5s infinite alternate ease-in-out;
 	counter-reset: num var(--num);
 	font: 800 40px system-ui;
 	padding: 2rem;
@@ -200,7 +200,7 @@ img {
 }
 
 .counter3 {
-	animation: counter 5s infinite alternate ease-in-out;
+	animation: counter3 5s infinite alternate ease-in-out;
 	counter-reset: num var(--num);
 	font: 800 40px system-ui;
 	padding: 2rem;
