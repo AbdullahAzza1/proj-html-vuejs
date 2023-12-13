@@ -76,6 +76,11 @@ export default {
 				</div>
 			</div>
 		</div>
+		<div class="bestMusic">
+			<p>MUSIC BLOG</p>
+			<h2>BEST MUSIC BLOG</h2>
+			<div>card</div>
+		</div>
 	</main>
 </template>
 
@@ -218,6 +223,11 @@ img {
 	to {
 		--num: 1001;
 	}
+}
+
+.bestMusic {
+	background-color: black;
+	height: 35rem;
 }
 
 // ...qui eventuale SCSS di AppComponent
