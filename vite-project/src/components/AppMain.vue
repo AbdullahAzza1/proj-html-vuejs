@@ -55,9 +55,25 @@ export default {
 			</div>
 		</div>
 		<div class="awards">
-			<img src="../assets/img/assets/counter_parallax.jpg" alt="">
 			<div>
-
+				<div class="counter">
+					<div>CONCERTS</div>
+				</div>
+			</div>
+			<div>
+				<div class="counter1">
+					<div>HAPPY CLIENTS</div>
+				</div>
+			</div>
+			<div>
+				<div class="counter2">
+					<div>MUSIC AWARDS</div>
+				</div>
+			</div>
+			<div>
+				<div class="counter3">
+					<div>TOTAL SONGS</div>
+				</div>
 			</div>
 		</div>
 	</main>
@@ -108,6 +124,100 @@ img {
 .awards {
 	height: 27rem;
 	width: 0 auto;
+	background-image: url(../assets/img/assets/counter_parallax.jpg);
+	background-size: cover;
+	display: flex;
+}
+
+
+@property --num {
+	syntax: "<integer>";
+	initial-value: 0;
+	inherits: false;
+}
+
+.counter {
+	animation: counter 5s infinite alternate ease-in-out;
+	counter-reset: num var(--num);
+	font: 800 40px system-ui;
+	padding: 2rem;
+}
+
+.counter::after {
+	content: counter(num);
+}
+
+@keyframes counter {
+	from {
+		--num: 0;
+	}
+
+	to {
+		--num: 900;
+	}
+}
+
+.counter1 {
+	animation: counter 5s infinite alternate ease-in-out;
+	counter-reset: num var(--num);
+	font: 800 40px system-ui;
+	padding: 2rem;
+}
+
+.counter1::after {
+	content: counter(num);
+}
+
+@keyframes counter1 {
+	from {
+		--num: 0;
+	}
+
+	to {
+		--num: 800;
+	}
+}
+
+.counter2 {
+	animation: counter 5s infinite alternate ease-in-out;
+	counter-reset: num var(--num);
+	font: 800 40px system-ui;
+	padding: 2rem;
+}
+
+.counter2::after {
+	content: counter(num);
+}
+
+@keyframes counter2 {
+	from {
+		--num: 0;
+	}
+
+	to {
+		--num: 400;
+	}
+}
+
+.counter3 {
+	animation: counter 5s infinite alternate ease-in-out;
+	counter-reset: num var(--num);
+	font: 800 40px system-ui;
+	padding: 2rem;
+}
+
+.counter3::after {
+	content: counter(num);
+}
+
+@keyframes counter3 {
+	from {
+		--num: 0;
+	}
+
+	to {
+		--num: 1001;
+	}
 }
 
 // ...qui eventuale SCSS di AppComponent
