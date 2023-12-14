@@ -15,6 +15,34 @@ export default {
 	},
 	mounted() {
 
+		window.onload = function () {
+			let slides =
+				document.getElementsByClassName('carousel-item');
+
+			function addActive(slide) {
+				slide.classList.add('active');
+			}
+
+			function removeActive(slide) {
+				slide.classList.remove('active');
+			}
+
+			addActive(slides[0]);
+			setInterval(function () {
+				for (let i = 0; i < slides.length; i++) {
+					if (i + 1 == slides.length) {
+						addActive(slides[0]);
+						setTimeout(removeActive, 350, slides[i]);
+						break;
+					}
+					if (slides[i].classList.contains('active')) {
+						setTimeout(removeActive, 350, slides[i]);
+						addActive(slides[i + 1]);
+						break;
+					}
+				}
+			}, 1500);
+		};
 	}
 }
 </script>
@@ -22,7 +50,17 @@ export default {
 <template>
 	<main>
 		<div class="jumbo">
-
+			<div class="carousel">
+				<div class="carousel-item">
+					<div class="slide-image" style="background-image:  url(../assets/img/image.png);">
+					</div>
+					<div>INSTRUMENTAL ROCK</div>
+				</div>
+				<div class="carousel-item">
+					<div class="slide-image" style="background-image: url(../assets/img/image(1).png);">
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="cards">
 			<div>
@@ -281,5 +319,53 @@ img {
 	height: 35rem;
 }
 
-// ...qui eventuale SCSS di AppComponent
-</style>
+
+
+.carousel {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.carousel-item .slide-image {
+	width: 270px;
+	height: 160px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.carousel-item {
+	position: absolute;
+	width: 100%;
+	height: 270px;
+	border: none;
+	top: 96px;
+
+}
+
+.carousel-item.active {
+	left: 0;
+	transition: all 0.3s ease-out;
+}
+
+.carousel-item div {
+	height: 100%;
+}
+
+.red {
+	background-color: red;
+}
+
+.green {
+	background-color: green;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.violet {
+	background-color: violet;
+}
+</style> // ...qui eventuale SCSS di AppComponent
