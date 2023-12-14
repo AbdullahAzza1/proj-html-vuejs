@@ -48,8 +48,7 @@ export default {
 			<h2>SENSE THE JAZZ</h2>
 		</div>
 		<div class="rock">
-			<img src="../assets/img/assets/cms_parallax.jpg" alt="">
-			<div id="center">INSTRUMENTAL ROCK
+			<div>INSTRUMENTAL ROCK
 				<h2>ALBUM OUT NOW</h2>
 				<button>read more</button>
 			</div>
@@ -107,12 +106,7 @@ img {
 	position: relative;
 }
 
-#center {
-	position: absolute;
-	top: 50%;
-	width: 100%;
-	text-align: center;
-}
+
 
 .soundCategory {
 	height: 50rem;
@@ -122,16 +116,18 @@ img {
 
 .rock {
 	height: 35rem;
-	width: 0 auto;
-	position: relative;
+	background-image: url(../assets/img/assets/cms_parallax.jpg);
+	background-size: cover;
+	display: flex;
+	align-items: center;
 }
 
 .awards {
 	height: 27rem;
-	width: 0 auto;
 	background-image: url(../assets/img/assets/counter_parallax.jpg);
 	background-size: cover;
 	display: flex;
+	align-items: center;
 }
 
 

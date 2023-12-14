@@ -54,6 +54,9 @@ export default {
         </div>
         <div>
             <div>NEWSLETTER</div>
+            <input type="email" placeholder="email">
+            <input type="text" placeholder="message">
+            <button>send message</button>
         </div>
     </footer>
 </template>
@@ -74,6 +77,14 @@ ol li {
 
 footer div {
     margin: 0 4%;
+}
+
+input {
+    background: black;
+    width: 20vw;
+    height: 13vh;
+    border-style: groove;
+    color: white;
 }
 
 // ...qui eventuale SCSS di AppComponent
