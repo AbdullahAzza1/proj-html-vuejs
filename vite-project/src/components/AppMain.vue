@@ -22,9 +22,26 @@ export default {
 <template>
 	<main>
 		<div class="jumbo">
-			<img src="../assets/img/image.png" alt="">
+
 		</div>
-		<div class="jumbo">
+		<div class="cards">
+			<div>
+				<img src="../assets/img/speaker.svg" alt="">
+				<h3>ORIGINAL IDEAS</h3>
+				<div>Contrary Popular Belief, Lorem Ipsum Not Simply Ipsum Random Text.</div>
+			</div>
+			<div>
+				<img src="../assets/img/disc.svg" alt="">
+				<h3>ORIGINAL IDEAS</h3>
+				<div>Contrary Popular Belief, Lorem Ipsum Not Simply Ipsum Random Text.</div>
+			</div>
+			<div>
+				<img src="../assets/img/headphones.svg" alt="">
+				<h3>ORIGINAL IDEAS</h3>
+				<div>Contrary Popular Belief, Lorem Ipsum Not Simply Ipsum Random Text.</div>
+			</div>
+		</div>
+		<div class="jumboStory">
 			<div>
 				<p>WHO WE ARE</p>
 				<h2>SENSE THE JAZZ</h2>
@@ -40,8 +57,7 @@ export default {
 			</div>
 		</div>
 		<div class="jumboVideo">
-			<img src="../assets/img/assets/Video-1024x361.jpg" alt="">
-			<h2 id="center">NEW MUSIC VIDEO</h2>
+			<h2>NEW MUSIC VIDEO</h2>
 		</div>
 		<div class="soundCategory">
 			<p>WHO WE ARE</p>
@@ -93,6 +109,42 @@ export default {
 	display: flex;
 	align-items: center;
 	text-align: center;
+	background-image: url(../assets/img/image.png);
+	background-size: cover;
+}
+
+.cards {
+	display: flex;
+	justify-content: space-around;
+	position: absolute;
+	width: 100%;
+	top: 61%;
+}
+
+.cards>div {
+	background-color: rgb(33, 33, 33);
+	height: 47vh;
+	width: 30vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 35px
+}
+
+.cards img {
+	width: 25%;
+	color: white;
+}
+
+.jumboStory {
+	height: 35rem;
+	width: 0 auto;
+	background-color: black;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	background-size: cover;
 }
 
 img {
@@ -101,9 +153,12 @@ img {
 }
 
 .jumboVideo {
-	width: 100%;
+	background-image: url(../assets/img/assets/Video-1024x361.jpg);
 	height: 30rem;
-	position: relative;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 
